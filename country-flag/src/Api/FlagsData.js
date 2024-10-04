@@ -14,7 +14,7 @@ const getData= ()=>{
             setLoading(false)
         }
         catch(e){
-            console.log("fetchData error",e)
+            console.error("Error fetching data: ",e)
             setLoading(false);
         }
     }
