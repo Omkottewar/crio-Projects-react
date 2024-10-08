@@ -1,0 +1,27 @@
+.topExpenses__body{
+    width: 617px;
+    height: 345px;
+    top: 441px;
+    left: 800px;
+    gap: 0px;
+    border-radius: 15px;
+    opacity: 0px;
+    
+background-color: white;
+}
+
+@media screen and (min-width: 850px) and (min-width : 929px) {
+    .AppBody{
+        flex-direction: column; 
+    }
+  }
+  @media (max-width: 1270px) {
+    .topExpenses__body{
+        width: 100%;
+    }
+  }
+  @media screen and (min-width: 780px) {
+    .AppBody{
+        flex-direction: row; 
+    }
+  }

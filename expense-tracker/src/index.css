@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #3b3b3b;
+  position: relative;
+}
+
+.main__body {
+  margin-left: 50px;
+  margin-right: 50px;
+}

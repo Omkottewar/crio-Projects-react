@@ -1,0 +1,17 @@
+.graphLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    color: white;
+}
+
+.label {
+    width: 2rem;
+    height: 0.5rem;
+    background-color: red;
+    border-radius: 4px; 
+}
+
+.labelText {
+    font-size: 0.9rem; 
+}

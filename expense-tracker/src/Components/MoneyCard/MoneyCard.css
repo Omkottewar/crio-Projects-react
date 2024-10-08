@@ -1,0 +1,73 @@
+.moneyCard__body{
+    width: 355.41px;
+    height: 181px;
+    border-radius: 15px;
+    background-color: #9B9B9B;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.moneyCard__heading{
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+}
+
+.moneyCard__balance{
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+
+.moneyCard__button{
+    width: 
+    167.65px;
+    color: white;
+   
+    margin: 0 auto;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    
+}
+
+.moneyCard__button__text{
+font-weight: 700;
+}
+
+.text-green{
+    color: #98F758;
+
+
+}
+
+.text-orange{
+    color: #ECB547;
+}
+
+.back-green{
+    background: linear-gradient(90deg, #B5DC52 0%, #89E148 100%);
+}
+
+.back-red{
+    background: linear-gradient(90deg, #FF9595 0%, #FF4747 80%, #FF3838 100%);
+
+}
+
+@media screen and (max-width: 930px) {
+
+    .moneyCard__body{
+        width: 100%;
+    }
+  }
+
+  
+@media (max-width: 520px) {
+
+    .moneyCard__body{
+        width: 100%;
+    }
+  }

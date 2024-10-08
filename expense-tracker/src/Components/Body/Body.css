@@ -1,0 +1,25 @@
+.app-body {
+  width: 100%;
+  flex: 1;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: relative;
+}
+
+.heading {
+  font-size: 1.75rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 32px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1270px) {
+  .app-body {
+    flex-direction: column;
+  }
+}

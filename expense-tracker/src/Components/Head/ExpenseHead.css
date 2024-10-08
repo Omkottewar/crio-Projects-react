@@ -1,0 +1,46 @@
+
+header {
+  background-color: #636362;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+
+@media (min-width: 930px) {
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 930px) and (max-width: 1160px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+
+@media (max-width: 930px) {
+  .card {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 920px) {
+  .app__head {
+    flex-direction: column;
+  }
+}
+
+.form__container {
+  position: absolute;
+  left: 45vw;
+  top: 45vh;
+}

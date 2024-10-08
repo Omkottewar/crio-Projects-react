@@ -1,0 +1,33 @@
+.GraphChart__label {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .graphDisplay__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .graph__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .graph__container {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .GraphChart__label {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  
