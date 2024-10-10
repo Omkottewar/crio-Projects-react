@@ -28,6 +28,7 @@ function App() {
     }
   };
   
+  console.log(typeof value)
 
   return (
     <div className=" mx-auto w-full  p-10">
@@ -43,6 +44,8 @@ function App() {
               className="bg-white border text-black p-2" 
             />
           </div>
+
+          <div className="">{value}</div>
 
           <div className="btn__row flex gap-2">
             <button type="button" value="7" onClick={handleClick}>7</button>
