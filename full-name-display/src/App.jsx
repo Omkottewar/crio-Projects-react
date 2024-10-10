@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./index.css";
 
 function App() {
@@ -19,13 +17,14 @@ function App() {
   };
 
   const handlesubmit = (e) => {
-    e.preventDefault(); // Prevent form submission
-    setIsSubmit(true); // Set submit state to true
+    e.preventDefault(); 
+    setIsSubmit(true); 
   };
 
   return (
     <div className="">
-      <form onSubmit={handlesubmit} className="flex flex-col text-3xl">
+      <h1 className="text-3xl font-bold">Full Name Display</h1>
+      <form onSubmit={handlesubmit} className="flex flex-col gap-5">
         <label htmlFor="firstName">
           First Name:
           <input
@@ -37,7 +36,6 @@ function App() {
             required
           />
         </label>
-
         <label htmlFor="lastName">
           Last Name:
           <input
@@ -49,10 +47,10 @@ function App() {
             required
           />
         </label>
-        <button type="submit">Submit</button>
+        <button type="submit" className=" w-24 rounded-sm border border-black bg-gray-300" >Submit</button>
       </form>
       <div className="mt-4">
-        {isSubmit && <span>{firstName} {lastName}</span>}
+      Full Name : {isSubmit && <span> {firstName} {lastName}</span>}
       </div>
     </div>
   );
