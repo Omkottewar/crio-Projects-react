@@ -6,7 +6,8 @@ function App() {
 
   const handleClick = (e) => {
     const input = e.target.value;
-    setValue(value + input);
+
+    setValue(String(value + input));
   };
 
   const handleReset = () => {
@@ -14,6 +15,11 @@ function App() {
   };
 
   const handleEqual = () => {
+    if (value.trim() === "") {
+      setValue("Error");
+      return;
+    }
+  
     try {
       const result = new Function('return ' + value)();
       setValue(result.toString());
@@ -21,6 +27,7 @@ function App() {
       setValue("Error");
     }
   };
+  
 
   return (
     <div className=" mx-auto w-full  p-10">
