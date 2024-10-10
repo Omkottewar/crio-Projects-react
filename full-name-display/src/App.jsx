@@ -8,17 +8,18 @@ function App() {
 
   const handlefirstName = (e) => {
     setFirstName(e.target.value);
-    setIsSubmit(false)
+    setIsSubmit(false);
   };
 
   const handlelastName = (e) => {
     setLastName(e.target.value);
-    setIsSubmit(false)
+    console.log(typeof e.target.value);
+    setIsSubmit(false);
   };
 
   const handlesubmit = (e) => {
-    e.preventDefault(); 
-    setIsSubmit(true); 
+    e.preventDefault();
+    setIsSubmit(true);
   };
 
   return (
@@ -28,7 +29,7 @@ function App() {
         <label htmlFor="firstName">
           First Name:
           <input
-            type="text"
+            type="char"
             name="firstName"
             onChange={handlefirstName}
             value={firstName}
@@ -47,11 +48,18 @@ function App() {
             required
           />
         </label>
-        <button type="submit" className=" w-24 rounded-sm border border-black bg-gray-300" >Submit</button>
+        <button
+          type="submit"
+          className=" w-24 rounded-sm border border-black bg-gray-300"
+        >
+          Submit
+        </button>
       </form>
-      <div className="mt-4">
-      Full Name : {isSubmit && <span> {firstName} {lastName}</span>}
-      </div>
+      <p className="mt-4">
+        {isSubmit && (
+            <span>Full Name : {firstName} {lastName}</span>
+        )}
+      </p>
     </div>
   );
 }
