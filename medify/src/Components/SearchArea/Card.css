@@ -1,0 +1,14 @@
+.card{
+    width: 203px;
+    display: flex;
+    flex-direction: column;
+height: 153px;
+gap: 0px;
+border-radius: 8px;
+opacity: 0px;
+justify-content: center;
+align-items: center;
+}
+.card:hover{
+    background-color: #EEF8FF;
+}

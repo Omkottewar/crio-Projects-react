@@ -1,0 +1,39 @@
+.navbar__heading {
+    width: 1500px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  background-color: #2AA7FF;
+}
+
+.navbar__body {
+    width: 69.125rem;
+  height: 96px;
+  top: 40px;
+}
+.navbar__logo {
+      
+}
+
+.navbar__image {
+  width: 30px;
+  padding: 2px;
+  border-radius: 5px ;
+  background: #2aa8ff;
+}
+
+.navbar__menu{
+    display: none;
+}
+
+.navbar__logoText {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2AA7FF;
+}
+
+.navbar__buttons {
+    flex-wrap: wrap;
+}
+

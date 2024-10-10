@@ -15,7 +15,8 @@ function App() {
 
   const handleEqual = () => {
     try {
-      setValue(eval(value).toString());
+      const result = new Function('return ' + value)();
+      setValue(result.toString());
     } catch (error) {
       setValue("Error");
     }
