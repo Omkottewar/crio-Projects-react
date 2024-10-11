@@ -23,7 +23,7 @@ function SimpleForm() {
 
   return (
     <div className='ml-10'>
-      <h2 className='text-2xl font-bold mb-5'>Simple Form</h2>
+      <h2 className='text-2xl font-bold mb-5'>Full Name Display</h2>
       <form onSubmit={handleSubmit}>
         <div className='flex gap-2 items-center'>
           <label htmlFor="firstname">First Name: </label><br />
@@ -52,9 +52,9 @@ function SimpleForm() {
         </div>
         <br />
         <button className='bg-gray-400 px-2 py-1 rounded-md border border-black ' type="submit">Submit</button>
+     
+        {showData?  <div className="mt-5 text-xl">Full Name:  {showData.firstname} {showData.lastname}</div>:null}
       </form>
-
-    {showData?  <div className="mt-5 text-xl">Full Name:  {showData.firstname} {showData.lastname}</div>:null}
     </div>
   );
 }
