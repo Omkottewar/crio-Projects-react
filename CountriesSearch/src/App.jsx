@@ -12,33 +12,35 @@ function App() {
     try {
       const res = await axios.get("https://restcountries.com/v3.1/all");
       setCountries(res.data);  
-      setFilteredCountries(res.data);
+      setFilteredCountries(res.data); 
     } catch (e) {
       console.error(e);
     }
   };
 
   useEffect(() => {
-    fetchData();
+    fetchData(); 
   }, []);
+
 
   const handleSearch = (event) => {
     const input = event.target.value.toLowerCase(); 
-    setSearchInput(input); 
+    setSearchInput(input);
 
+    if (input === "") {
 
-    console.log("Current Input:", input);
+      setFilteredCountries(countries);
+    } else {
 
-
-    const filtered = countries.filter(item => 
-      item.name.common.toLowerCase().includes(input)
-    );
-    
-    setFilteredCountries(filtered);  
+      const filtered = countries.filter(item =>
+        item.name.common.toLowerCase().includes(input)
+      );
+      setFilteredCountries(filtered);
+    }
   };
 
   return (
-    <div className="">
+    <div className="App">
       <input 
         type="text" 
         value={searchInput} 
@@ -47,9 +49,13 @@ function App() {
       />
       <div className="countryCard">
         {
-          filteredCountries.map((item, index) => {
-            return <Card data={item} key={index} />;
-          })
+          filteredCountries.length > 0 ? (
+            filteredCountries.map((item, index) => {
+              return <Card data={item} key={index} />;
+            })
+          ) : (
+            <p>No countries found</p>
+          )
         }
       </div>
     </div>
