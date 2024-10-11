@@ -1,0 +1,6 @@
+.countryCard{
+    display: flex;
+    gap:15px;
+    flex-wrap: wrap;
+    padding: 45px ;
+}
