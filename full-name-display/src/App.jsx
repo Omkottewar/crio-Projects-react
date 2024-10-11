@@ -6,7 +6,7 @@ function SimpleForm() {
     lastname: ''
   });
 
-  const [showData, setShowData] = useState("")
+  const [showData, setShowData] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,7 +18,7 @@ function SimpleForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setShowData({...formData})
+    setShowData(formData);
   };
 
   return (
@@ -28,7 +28,7 @@ function SimpleForm() {
         <div className='flex gap-2 items-center'>
           <label htmlFor="firstname">First Name: </label><br />
           <input
-          className='border border-black rounded-md py-1 px-2' 
+            className='border border-black rounded-md py-1 px-2' 
             type="text"
             id="firstname"
             name="firstname"
@@ -41,7 +41,7 @@ function SimpleForm() {
         <div className='flex gap-2 items-center'>
           <label htmlFor="lastname">Last Name:</label><br />
           <input
-           className='border border-black rounded-md py-1 px-2' 
+            className='border border-black rounded-md py-1 px-2' 
             type="text"
             id="lastname"
             name="lastname"
@@ -52,9 +52,12 @@ function SimpleForm() {
         </div>
         <br />
         <button className='bg-gray-400 px-2 py-1 rounded-md border border-black ' type="submit">Submit</button>
-     
-        {showData?  <div className="mt-5 text-xl">Full Name:  {showData.firstname} {showData.lastname}</div>:null}
       </form>
+      {showData && (
+        <div className="mt-5 text-xl">
+          Full Name: {showData.firstname} {showData.lastname}
+        </div>
+      )}
     </div>
   );
 }
