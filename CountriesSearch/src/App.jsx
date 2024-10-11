@@ -47,14 +47,14 @@ function App() {
         onChange={handleSearch} 
         placeholder="Search for a country..." 
       />
-      <div className="countryCard">
+      <div className="">
         {
           filteredCountries.length > 0 ? (
             filteredCountries.map((item, index) => {
               return <Card data={item} key={index} />;
             })
           ) : (
-            <p>No countries found</p>
+            null
           )
         }
       </div>

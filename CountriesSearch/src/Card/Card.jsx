@@ -5,7 +5,7 @@ import './Card.css'
 const Card = ({data}) => {
     const {name ,flags} = data
   return (
-<div className="card">
+<div className="countryCard">
 
 <img className='card__image' src={flags.png} alt="" />
 <p >{name.common}</p>
