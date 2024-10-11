@@ -1,62 +1,62 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./index.css";
+import React, { useState } from 'react';
 
-function App() {
-  const [lastName, setLastName] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [isSubmit, setIsSubmit] = useState(false);
+function SimpleForm() {
+  const [formData, setFormData] = useState({
+    firstname: '',
+    lastname: ''
+  });
 
-  const handlefirstName = (e) => {
-    setFirstName(e.target.value);
-    setIsSubmit(false);
+  const [showData, setShowData] = useState("")
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
   };
 
-  const handlelastName = (e) => {
-    setLastName(e.target.value);
-    console.log(typeof e.target.value);
-    setIsSubmit(false);
-  };
-
-  const handlesubmit = (e) => {
-    e.preventDefault(); // Prevent form submission
-    setIsSubmit(true); // Set submit state to true
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setShowData({...formData})
   };
 
   return (
-    <div className="">
-      <form onSubmit={handlesubmit} className="flex flex-col text-3xl">
-        <label htmlFor="firstName">
-          First Name:
+    <div className='ml-10'>
+      <h2 className='text-2xl font-bold mb-5'>Simple Form</h2>
+      <form onSubmit={handleSubmit}>
+        <div className='flex gap-2 items-center'>
+          <label htmlFor="firstname">First Name: </label><br />
           <input
-            type="char"
-            name="firstName"
-            onChange={handlefirstName}
-            value={firstName}
-            id="firstName"
-            required
-          />
-        </label>
-
-        <label htmlFor="lastName">
-          Last Name:
-          <input
+          className='border border-black rounded-md py-1 px-2' 
             type="text"
-            name="lastName"
-            id="lastName"
-            onChange={handlelastName}
-            value={lastName}
+            id="firstname"
+            name="firstname"
+            value={formData.firstname}
+            onChange={handleChange}
             required
           />
-        </label>
-        <button type="submit">Submit</button>
+        </div>
+        <br />
+        <div className='flex gap-2 items-center'>
+          <label htmlFor="lastname">Last Name:</label><br />
+          <input
+           className='border border-black rounded-md py-1 px-2' 
+            type="text"
+            id="lastname"
+            name="lastname"
+            value={formData.lastname}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <br />
+        <button className='bg-gray-400 px-2 py-1 rounded-md border border-black ' type="submit">Submit</button>
       </form>
-      <div className="mt-4">
-        {isSubmit && <span>{firstName} {lastName}</span>}
-      </div>
+
+    {showData?  <div className="mt-5 text-xl">Full Name:  {showData.firstname} {showData.lastname}</div>:null}
     </div>
   );
 }
 
-export default App;
+export default SimpleForm;
