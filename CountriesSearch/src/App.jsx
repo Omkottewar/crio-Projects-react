@@ -12,26 +12,29 @@ function App() {
     try {
       const res = await axios.get("https://restcountries.com/v3.1/all");
       setCountries(res.data);  
-      setFilteredCountries(res.data);  
+      setFilteredCountries(res.data);
     } catch (e) {
       console.error(e);
     }
   };
 
   useEffect(() => {
-    fetchData();  
+    fetchData();
   }, []);
 
   const handleSearch = (event) => {
     const input = event.target.value.toLowerCase(); 
-    setSearchInput(input);
+    setSearchInput(input); 
+
+
+    console.log("Current Input:", input);
 
 
     const filtered = countries.filter(item => 
-      item.name.common.toLowerCase().includes(input) 
+      item.name.common.toLowerCase().includes(input)
     );
-
-    setFilteredCountries(filtered); 
+    
+    setFilteredCountries(filtered);  
   };
 
   return (
