@@ -1,4 +1,4 @@
-.countryCard{
+.countryContainer{
     display: flex;
     gap:15px;
     flex-wrap: wrap;

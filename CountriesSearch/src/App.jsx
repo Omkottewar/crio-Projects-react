@@ -47,7 +47,7 @@ function App() {
         onChange={handleSearch} 
         placeholder="Search for a country..." 
       />
-      <div className="">
+      <div className="cardContainer">
         {
           filteredCountries.length > 0 ? (
             filteredCountries.map((item, index) => {
