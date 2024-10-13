@@ -1,0 +1,32 @@
+.patiendCaring__body {
+  position: relative;
+  height: 598px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+}
+
+.patient__image1 {
+  width: 332px;
+  height: 275px;
+  border-radius: 5px;
+
+}
+.patient__image2 {
+  width: 332px;
+  height: 275px;
+  border-radius: 5px;
+  opacity: 0px;
+}
+
+
+.call__container {
+  width: 234.45px;
+  height: 86px;
+  top: 3029px;
+  left: 138px;
+  gap: 0px;
+  border-radius: 8px;
+  opacity: 0px;
+  background-color: white;
+}

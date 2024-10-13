@@ -42,7 +42,7 @@ const SearchArea = () => {
           </div>
           <div className="form__input">
             <img className="" src={search} placeholder="City" alt="" />
-            <input type="text" />
+            <input className="" type="text" />
           </div>
           <button className="flex gap-2">
             {" "}
@@ -53,11 +53,11 @@ const SearchArea = () => {
       <div className="searchArea__content">
         <h2 className="font-medium text-xl">You may be Looking for</h2>
         <div className="cards-container flex mx-[35px] gap-[20px]">
-          {/* {cards.map((item, index) => {
+          {cards.map((item, index) => {
             return (
               <Cards data={item} key={index} /> 
             );
-          })} */}
+          })}
         </div>
       </div>
     </div>
