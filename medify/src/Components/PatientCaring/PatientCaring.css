@@ -1,32 +1,113 @@
-.patiendCaring__body {
+.patient-caring-wrapper {
+  width: 80%;
+  height: 584px;
+  display: flex;
+  justify-content: space-between;
   position: relative;
-  height: 598px;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(2,1fr);
 }
-
-.patient__image1 {
-  width: 332px;
-  height: 275px;
-  border-radius: 5px;
-
+.patient-caring-body {
+  position: relative;
 }
-.patient__image2 {
-  width: 332px;
-  height: 275px;
-  border-radius: 5px;
-  opacity: 0px;
-}
-
-
-.call__container {
-  width: 234.45px;
-  height: 86px;
-  top: 3029px;
-  left: 138px;
-  gap: 0px;
-  border-radius: 8px;
-  opacity: 0px;
+.patient-caring-call-container {
+  width: 235px;
   background-color: white;
+  position: relative;
+  border-radius: 5px;
+  padding: 5px;
+  z-index: 100;
+  position: absolute;
+  top: 200px;
+  right:150px
+}
+.patient-caring-call-container > span {
+  display: flex;
+  align-items: center;
+}
+
+.patient-caring-image1 {
+  width: 332px;
+  height: 275px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px;
+  position: relative;
+  left: 100px;
+  top: 80px;
+  z-index: 0;
+}
+.patient-caring-image2 {
+  width: 332px;
+  height: 275px;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px;
+  z-index: 100;
+}
+.patient-caring-info {
+  width: 563px;
+  height: 375px;
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+}
+.patient-caring-feature{
+  display: flex;
+  margin-top:20px ;
+}
+.patient-caring-heading{
+font-size: 16px;
+font-weight: 600;
+line-height: 27px;
+text-align: left;
+color: #2AA8FF;
+}
+.patient-caring-title{
+font-size: 48px;
+font-weight: 600;
+line-height: 67px;
+text-align: left;
+}
+
+
+
+@media (max-width:1260px){
+  .patient-caring-info{
+    position: relative;
+    top: 200px;
+    left: 80px;
+
+  }
+  .patient-caring-call-container{
+    left: 0;
+  }
+  .patient-caring-wrapper{
+    margin-bottom: 100px;
+  }
+}
+@media (max-width:700px){
+  .patient-caring-wrapper{
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    margin-bottom: 150px;
+  }
+  .patient-caring-title{
+    font-size:xx-large
+  }
+  .patient-caring-info{
+    margin-top: -160px;
+    left: 0px;
+    width: 100%;
+  }
+  .patient-caring-image1,.patient-caring-image2{
+    width: 80%;
+    height: 80%;
+  }
+  .patient-caring-description,.patient-caring-feature{
+    font-size: small;
+    margin-top: 5px;
+  }
+  .patient-caring-call-container{
+    width: 180px;
+  }
 }

@@ -7,57 +7,31 @@ import CapsuleVector from "../../assets/CapsuleVector.svg";
 import AmbulanceVector from "../../assets/AmbulanceVector.svg";
 import search from "../../assets/search.svg";
 import Cards from "./Cards";
+import SearchDoctor from "../SearchDoctor/SearchDoctor";
+import { Link } from "react-router-dom";
 
 const SearchArea = () => {
   const cards = [
-    {
-      name: "Doctors",
-      image: DocVector,
-    },
-    {
-      name: "Labs",
-      image: labVector,
-    },
-    {
-      name: "Hospitals",
-      image: HospitalVector,
-    },
-    {
-      name: "Medical Store",
-      image: CapsuleVector,
-    },
-    {
-      name: "Ambulance",
-      image: AmbulanceVector,
-    },
+    { name: "Doctors", image: DocVector },
+    { name: "Labs", image: labVector },
+    { name: "Hospitals", image: HospitalVector },
+    { name: "Medical Store", image: CapsuleVector },
+    { name: "Ambulance", image: AmbulanceVector },
   ];
 
   return (
-    <div className="searchArea__body rounded-2xl ">
-      <div className="searchArea__input ml-[204px]">
-        <form action="" className="searchArea__form">
-          <div className="form__input">
-            <img className="" src={search} placeholder="State" alt="" />
-            <input type="text" />
-          </div>
-          <div className="form__input">
-            <img className="" src={search} placeholder="City" alt="" />
-            <input className="" type="text" />
-          </div>
-          <button className="flex gap-2">
-            {" "}
-            <img src={search} alt="search icon" /> Search
-          </button>
-        </form>
+   <div className="search-area">
+      <div className="search-area__input">
+       <div className=" relative -bottom-14 left-28">
+       <SearchDoctor/>
+       </div>
       </div>
-      <div className="searchArea__content">
-        <h2 className="font-medium text-xl">You may be Looking for</h2>
-        <div className="cards-container flex mx-[35px] gap-[20px]">
-          {cards.map((item, index) => {
-            return (
-              <Cards data={item} key={index} /> 
-            );
-          })}
+      <div className="search-area__content">
+        <h2 className="search-area__heading">You may be Looking for</h2>
+        <div className="cards-container">
+          {cards.map((item, index) => (
+            <Cards data={item} key={index} />
+          ))}
         </div>
       </div>
     </div>

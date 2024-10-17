@@ -1,0 +1,14 @@
+.header-text{
+    font-size: 10px;
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+}
+
+
+@media (min-Width:740px){
+    .header-text{
+        font-size: 14px;
+        padding: 10px 0px 10px 0px;
+        width: 1440px;
+    }
+}

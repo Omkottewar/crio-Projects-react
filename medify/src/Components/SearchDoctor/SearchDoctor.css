@@ -1,0 +1,26 @@
+.search-doctors {
+  background-color: white;
+  width: 1166px;
+  height: 111px;
+  padding: 27px 24px 27px 24px;
+  gap: 29px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -50px;
+}
+
+.search-doctors>form > button {
+  display: flex;
+  justify-content: left;
+  padding-left: 20px;
+  align-items: center;
+  font-size: large;
+}
+.search-doctors>form > input {
+  width: 522px;
+  height: 57px;
+  border: 1px 0px 0px 0px;
+  padding-left: 10px;
+}

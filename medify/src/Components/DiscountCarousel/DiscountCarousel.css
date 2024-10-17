@@ -1,86 +1,84 @@
-/* Container for the entire carousel */
-.carousel-container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 40px 0;
-    background-color: #f9f9f9;
+.discount-carousel-container {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 350px;
+    z-index: 1;
+    height: auto;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    background-color: white;
 }
 
-/* Each slide */
-.slide {
+.discount-carousel-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.discount-carousel-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    text-align: center;
-}
-
-/* Hover effect to add more depth */
-.slide:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Image inside the slide */
-.slide img {
     width: 100%;
-    height: 80px;
-    border-radius: 16px;
+    max-width: 400px;
+    height: 150px;
+    overflow: hidden;
+    margin: 10px 0px; /* Reduced padding for better balance */
+}
+
+.discount-carousel-img {
+    width: 400px;
+    height: 100%;
     object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
-/* Text content on top of the image */
-.slide-content {
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    color: #fff;
-    font-size: 1.2rem;
-    text-align: left;
-    z-index: 2;
+.discount-carousel-img:hover {
+    transform: scale(1.05);
 }
 
-.slide h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.slide p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-}
-
-/* CTA button */
-.slide .cta-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.slide .cta-button:hover {
-    background-color: #0056b3;
-}
-
-/* Responsive layout */
-@media (max-width: 768px) {
-    .slide {
-        padding: 15px;
-        flex-direction: column;
+/* Responsive Design */
+@media  (max-width: 1124px){
+    .discount-carousel-container h1 {
+        font-size: 2rem;
     }
-    
-    .slide-content {
-        top: 15%;
-        left: 10%;
-        font-size: 1rem;
+    .discount-carousel-container {
+        margin: -100px 0px 0px 0px; /* Adjusted margin for better spacing */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .discount-carousel-container h1 {
+        font-size: 1.8rem;
+    }
+    .discount-carousel-img {
+        max-width: 350px; /* Max-width instead of min-width */
+        height: 175px;    /* Adjusted height */
+    }
+    .discount-carousel-slide {
+        padding: 50px 0; /* Reduced padding for tablets */
+    }
+}
+
+@media (max-width: 667px) {
+    .discount-carousel-container {
+        margin-top: -100px; /* Reduced margin for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .discount-carousel-container h1 {
+        font-size: 1.5rem;
+    }
+    .discount-carousel-container {
+        margin-top: 550px; /* Reduced margin for mobile */
+    }
+
+    .discount-carousel-img {
+        max-width: 400px; /* Smaller max-width for mobile */
+        height: 125px;
     }
 }

@@ -1,0 +1,19 @@
+.booking-btn {
+  width: 177px;
+  height: 50px;
+  border-radius: 8px;
+  opacity: 0px;
+  background: #2aa8ff;
+}
+.search-bar{
+    box-shadow: 6px 6px 35px 0px #1028511C;
+}
+.booking-heading{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45.96px;
+    text-align: left;
+    color: white;
+     padding-top: 30px;
+     padding-left: 280px;
+}

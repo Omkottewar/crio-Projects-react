@@ -1,0 +1,13 @@
+.slot-btn {
+  border: 1px solid #2aa7ff;
+  width: 95px;
+  height: 31.59px;
+  padding: 7px 10.96px 7.59px 11.44px;
+  border-radius: 3px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #2AA7FF;
+
+}

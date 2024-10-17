@@ -1,4 +1,5 @@
 import React from "react";
+import "./Home.css";
 import Navbar from "../Navbar/Navbar";
 import Hero from "../Hero/Hero";
 import SearchArea from "../SearchArea/SearchArea";
@@ -15,6 +16,10 @@ import DiscountCarousel from "../DiscountCarousel/DiscountCarousel";
 import LatestNews from "../latestNews/LatestNews";
 import FamilyComponent from "../FamilyComponent/FamilyComponent";
 import FrequentQuestions from "../FrequentQuestions/FrequentQUestions";
+import FindSpecialisation from "../FindSpecialization/FindSpecialisation";
+import Download from "../Download/Download";
+import MainFooter from "../MainFooter/MainFooter";
+import { BrowserRouter } from "react-router-dom";
 
 const Home = () => {
   const specialists = [
@@ -27,22 +32,16 @@ const Home = () => {
 
   return (
     <div className="">
-      <div className="flex flex-col items-center bg-gradient-to-r from-[#E7F0FF] to-[rgba(232,241,255,0.47)]">
-        <span className="bg-[#2AA7FF] w-screen text-center text-[14px] h-[40px]">
-          The health and well-being of our patients and their health care team
-          will always be our priority, so we follow the best practices for
-          cleanliness.
-        </span>
-        <Navbar />
+      <div className=" flex flex-col items-center bg-gradient-to-r from-[#E7F0FF] to-[rgba(232,241,255,0.47)]">
         <Hero />
         <SearchArea />
-        <DiscountCarousel/>
-
+        <DiscountCarousel />
+        <FindSpecialisation />
         <SpecialistComponent specialists={specialists} />
-        <PatientCaring/>
-        <LatestNews/>
-        <FamilyComponent/>
-        <FrequentQuestions/>
+        <PatientCaring />
+        <LatestNews />
+        <FamilyComponent />
+        <FrequentQuestions />
       </div>
     </div>
   );

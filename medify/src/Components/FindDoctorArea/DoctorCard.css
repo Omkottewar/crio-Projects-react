@@ -1,0 +1,99 @@
+.doctor-card {
+  width: 786px;
+  height: 269px;
+  top: 774px;
+  left: 135px;
+  padding: 0px 0.44px 0.62px 0px;
+  gap: 0px;
+  border: 0px 0px 1px 0px;
+  opacity: 0px;
+  display: flex;
+  align-items: start;
+}
+
+.doctor-card-image {
+}
+
+.doctor-card-content {
+  display: flex;
+  align-items: end;
+}
+
+.doctor-card-info {
+  width: 339.55px;
+  height: 220.38px;
+  padding: 43px 12.55px 0px 16px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.doctor-card-hospital-name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  color: #14bef0;
+}
+
+.doctor-card-hospital-location {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.6px;
+  text-align: left;
+  color: #414146;
+}
+
+.doctor-card-rating {
+  display: flex;
+  align-items: center;
+  background: #00a500;
+  width: 44.08px;
+  height: 22.5px;
+  padding: 4.5px 7.49px 4px 10.8px;
+  gap: 2.79px;
+  border-radius: 3.5px;
+  opacity: 0px;
+}
+
+.doctor-card-fee {
+}
+
+.doctor-card-consultation-fee {
+  color: #02a401;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.6px;
+  text-align: left;
+}
+
+.doctor-card-availability {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.doctor-card-availability > p {
+  color: #01a400;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  text-align: center;
+}
+
+.doctor-card-availability > button {
+  border: 1px solid #14bef0;
+  background: #2aa7ff;
+  color: white;
+  width: 212px;
+  height: 40px;
+  padding: 9.62px 28.55px 9.38px 29.45px;
+  gap: 0px;
+  border-radius: 4px;
+  opacity: 0px;
+}
+
+.date-btn {
+width: 110px;
+height: 50px;
+}

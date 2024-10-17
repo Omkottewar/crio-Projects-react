@@ -8,12 +8,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { discount, discount2 } from '../../assets';
 
-const SpecialistComponent = () => {
-    const array = [discount, discount2, discount];
+const DiscountCarousel = () => {
+    const array = [discount, discount2, discount, discount2, discount];
 
     return (
-        <div className="specialist-container">
-            <h1>Our Medical Specialists</h1>
+        <div className="discount-carousel-container">
             <Swiper
                 modules={[Navigation, Pagination]}
                 navigation
@@ -22,17 +21,17 @@ const SpecialistComponent = () => {
                 slidesPerView={4}
                 breakpoints={{
                     320: { slidesPerView: 1 },  // For mobile
-                    768: { slidesPerView: 2 },  // For tablets
-                    1024: { slidesPerView: 4 }  // For desktop
+                    768: { slidesPerView: 1 },  // For tablets
+                    1024: { slidesPerView: 2 }  // For desktop
                 }}
             >
                 {array.map((card, index) => (
                     <SwiperSlide key={index}>
-                        <div className="specialist-slide">
+                        <div className="discount-carousel-slide">
                             <img
-                                className="specialist-img"
+                                className="discount-carousel-img"
                                 src={card}
-                                alt={`Specialist ${index + 1}`}
+                                alt={`Discount ${index + 1}`}
                             />
                         </div>
                     </SwiperSlide>
@@ -42,4 +41,4 @@ const SpecialistComponent = () => {
     );
 };
 
-export default SpecialistComponent;
+export default DiscountCarousel;

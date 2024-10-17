@@ -1,39 +1,74 @@
-.navbar__heading {
-    width: 1500px;
-  height: 40px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  background-color: #2AA7FF;
+.navbar {
+  width: 100%;
 }
-
-.navbar__body {
-    width: 69.125rem;
+.navbar__container {
   height: 96px;
-  top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px 0px 10px;
 }
-.navbar__logo {
-      
+.navbar__logo-container {
+  display: flex;
+  text-align: center;
+  gap: 5px;
+  margin-left: 5px;
 }
-
-.navbar__image {
-  width: 30px;
-  padding: 2px;
-  border-radius: 5px ;
-  background: #2aa8ff;
+.navbar__logo-image {
+  width: 23px;
+  height: 23.02px;
 }
-
-.navbar__menu{
-    display: none;
+.navbar__logo-text {
+font-size: 18px;
+font-weight: 700;
+line-height: 27px;
+letter-spacing: 0.02em;
+text-align: left;
+color: #2AA8FF;
 }
-
-.navbar__logoText {
-  font-size: 18px;
+.navbar__menu {
+  display: block;
+  color: #2AA8FF;
   font-weight: 700;
-  color: #2AA7FF;
+  
 }
 
-.navbar__buttons {
-    flex-wrap: wrap;
+.navbar__menu-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: screen;
+  left: 0;
+  top: 141px;
+  background-color: white;
+  box-shadow: 6px 6px 35px 0px #1028511C;
+
+}
+.navbar__buttons-container {
+  display: none;
+
 }
 
+@media (min-width: 970px) {
+  .navbar__menu {
+    display: none;
+  }
+  .navbar__buttons-container {
+    display: flex;
+    gap: 55px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    
+  }
+}
+@media (max-width: 1200px) {
+
+}
+@media (min-width: 1440px) {
+  .navbar{
+    padding: 0px 135px 0px 135px;
+  }
+}

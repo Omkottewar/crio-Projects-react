@@ -1,14 +1,21 @@
-.card{
-    width: 203px;
-    display: flex;
-    flex-direction: column;
-height: 153px;
-gap: 0px;
-border-radius: 8px;
-opacity: 0px;
-justify-content: center;
-align-items: center;
+.card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  height: 153px;
+  border-radius: 8px;
+  opacity: 0px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
-.card:hover{
-    background-color: #EEF8FF;
+.card:hover {
+  background-color: #eef8ff;
+  border: 1px solid #2aa7ff;
+}
+
+@media (max-width:466px){
+  .card{
+    width: 150px;
+  }
 }

@@ -1,0 +1,49 @@
+.find-doctor-area {
+  /* Styles for the main container */
+}
+
+.find-doctor-header {
+  /* Styles for the header section */
+}
+
+.hospital-count {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.verified-info{
+    display: flex;
+    gap:10px
+}
+.verified-info>p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #787887;
+}
+
+.verified-icon {
+  /* Styles for the verified icon image */
+}
+
+.doctor-list-container {
+
+display: flex;
+gap: 35px;
+}
+
+.doctor-list {
+  /* Styles for the list of doctor cards */
+}
+
+.commercial-image {
+    width: 250px; /* Fixed width */
+    height: auto; /* Maintains aspect ratio */
+    margin-left: 20px; /* Space between the commercial image and the doctor list */
+}
+
+.commercial-image>img {
+    width: 250px; /* Fixed width */
+    height: auto; /* Maintains aspect ratio */
+    margin-left: 20px; /* Space between the commercial image and the doctor list */
+}

@@ -1,5 +1,77 @@
-.hero_body{
-    position: relative;
-    width: 73.125rem;
+.hero__body {
+  display: flex;
 }
 
+.hero__text-container {
+    padding: 0px 10px 0px 10px;
+}
+.hero__text {
+  font-size: 31px;
+  font-weight: 500;
+  text-align: left;
+}
+.hero__subheading {
+}
+.hero__heading {
+}
+.hero__highlight1 {
+  font-size: 56px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.hero__highlight2 {
+  font-size: 56px;
+  font-weight: 700;
+  text-align: left;
+  color: #2aa8ff;
+}
+
+.hero__description {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+.hero__button {
+  width: 177px;
+  height: 48px;
+  /* padding: 12px 36px 12px 36px; */
+  border-radius: 8px;
+  background-color: #2aa8ff;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+.hero__image-container {
+}
+.hero__image {
+}
+
+@media (max-width: 1120px) {
+    .hero__body{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:500px){
+    .hero__highlight1 {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: left;
+      }
+      
+      .hero__highlight2 {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: left;
+        color: #2aa8ff;
+      }
+      
+      .hero__description {
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+      }
+}

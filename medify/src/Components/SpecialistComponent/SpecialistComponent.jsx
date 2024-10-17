@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 const SpecialistComponent = ({ specialists }) => {
   return (
     <div className="specialist-container">
-      <h1>Our Medical Specialist</h1>
+      <h1 className="specialist-title">Our Medical Specialists</h1>
       <div className="swiper-wrapper">
         <Swiper
           modules={[Navigation, Pagination]}
@@ -19,22 +19,24 @@ const SpecialistComponent = ({ specialists }) => {
           pagination={{ clickable: true }}
           spaceBetween={20}
           slidesPerView={4}
+          breakpoints={{
+            320: { slidesPerView: 1 },  // For mobile
+            768: { slidesPerView: 3 },  // For tablets
+            1024: { slidesPerView: 4 }  // For desktop
+        }}
         >
-          {specialists.map((specialist, index) => {
-            console.log(specialist.image)
-            return (
-              <SwiperSlide key={index}>
-                <div className="specialist-slide">
-                  <img
-                    className=""
-                    src={specialist.image}
-                    alt={specialist.name}
-                  />
-                  <h3>{specialist.name}</h3>
-                </div>
-              </SwiperSlide>
-            );
-          })}
+          {specialists.map((specialist, index) => (
+            <SwiperSlide key={index}>
+              <div className="specialist-slide">
+                <img
+                  className="specialist-image"
+                  src={specialist.image}
+                  alt={specialist.name}
+                />
+                <h3 className="specialist-name">{specialist.name}</h3>
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
