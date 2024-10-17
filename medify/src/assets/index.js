@@ -26,7 +26,7 @@ export { default as MRI } from "./MRI.png";
 export { default as blood } from "./blood.png";
 export { default as piscologist } from "./piscologist.png";
 export { default as laboratory } from "./laboratory.png";
-export { default as xRay } from "./x-Ray.png";
+export { default as xRay } from "./xRay.png";
 export { default as dentist } from "./dentist.png";
 export { default as plus } from "./plus.svg";
 export { default as search } from "./search.svg";
