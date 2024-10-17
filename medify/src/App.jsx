@@ -1,10 +1,7 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./index.css";
 import Home from "./Components/Home/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import FrequentQuestions from "./Components/FrequentQuestions/FrequentQUestions";
 import Download from "./Components/Download/Download";
 import MainFooter from "./Components/MainFooter/MainFooter";
 import Navbar from "./Components/Navbar/Navbar";
