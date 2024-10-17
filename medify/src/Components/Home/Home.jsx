@@ -15,11 +15,8 @@ import PatientCaring from "../PatientCaring/PatientCaring";
 import DiscountCarousel from "../DiscountCarousel/DiscountCarousel";
 import LatestNews from "../latestNews/LatestNews";
 import FamilyComponent from "../FamilyComponent/FamilyComponent";
-import FrequentQuestions from "../FrequentQuestions/FrequentQUestions";
 import FindSpecialisation from "../FindSpecialization/FindSpecialisation";
-import Download from "../Download/Download";
-import MainFooter from "../MainFooter/MainFooter";
-import { BrowserRouter } from "react-router-dom";
+import FrequentQuestions from "../FrequentQuestions/FrequentQUestions";
 
 const Home = () => {
   const specialists = [
@@ -41,7 +38,7 @@ const Home = () => {
         <PatientCaring />
         <LatestNews />
         <FamilyComponent />
-        <FrequentQuestions />
+        <FrequentQuestions/>
       </div>
     </div>
   );
