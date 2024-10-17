@@ -2,7 +2,7 @@ import React from 'react';
 //styles of this component are in Navbar.css
 //asstes
 import sheildIcon from "../../assets/sheildWhite.svg";
-import LogoImage from "../../assets/Logo.svg"
+import LogoImage from "../../assets/logo.svg"
 //components
 import Button from '../Button/Button';
 
