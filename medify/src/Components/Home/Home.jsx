@@ -15,7 +15,7 @@ import PatientCaring from "../PatientCaring/PatientCaring";
 import DiscountCarousel from "../DiscountCarousel/DiscountCarousel";
 import LatestNews from "../latestNews/LatestNews";
 import FamilyComponent from "../FamilyComponent/FamilyComponent";
-import FrequentQuestions from "../FrequentQuestions/FrequentQUestions";
+import FrequentQuestions from "../FrequentQuestions/FrequentQuestions";
 import FindSpecialisation from "../FindSpecialisation/FindSpecialisation";
 
 const Home = () => {
