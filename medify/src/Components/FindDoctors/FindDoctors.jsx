@@ -1,7 +1,7 @@
 import React from 'react'
 import "./FindDoctors.css"
 import SearchDoctor from '../SearchDoctor/SearchDoctor'
-import FrequentQuestions from '../FrequentQuestions/FrequentQUestions'
+import FrequentQuestions from '../FrequentQuestions/FrequentQuestions'
 import FindDoctorArea from '../FindDoctorArea/FindDoctorArea'
 
 const FindDoctors = () => {
