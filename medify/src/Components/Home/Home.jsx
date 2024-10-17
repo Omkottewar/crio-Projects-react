@@ -16,6 +16,7 @@ import DiscountCarousel from "../DiscountCarousel/DiscountCarousel";
 import LatestNews from "../latestNews/LatestNews";
 import FamilyComponent from "../FamilyComponent/FamilyComponent";
 import FrequentQuestions from "../FrequentQuestions/FrequentQUestions";
+import FindSpecialisation from "../FindSpecialisation/FindSpecialisation";
 
 const Home = () => {
   const specialists = [
@@ -32,7 +33,7 @@ const Home = () => {
         <Hero />
         <SearchArea />
         <DiscountCarousel />
-        <FindSpecialisation />
+        <FindSpecialisation/>
         <SpecialistComponent specialists={specialists} />
         <PatientCaring />
         <LatestNews />
