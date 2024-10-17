@@ -31,4 +31,4 @@ export { default as dentist } from "./dentist.png";
 export { default as plus } from "./plus.svg";
 export { default as search } from "./search.svg";
 export { default as doctorCardImage } from "./doctorCardImage.svg";
-export { default as thumbsUp } from "./thumbsUp.svg";
+export { default as docVector } from "./docVector.svg";

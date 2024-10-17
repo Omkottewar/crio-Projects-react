@@ -1,6 +1,5 @@
 import React from "react";
 import "./SearchArea.css";
-import DocVector from "../../assets/DocVector.svg";
 import labVector from "../../assets/labVector.svg";
 import HospitalVector from "../../assets/HospitalVector.svg";
 import CapsuleVector from "../../assets/CapsuleVector.svg";
@@ -9,10 +8,11 @@ import search from "../../assets/search.svg";
 import Cards from "./Cards";
 import SearchDoctor from "../SearchDoctor/SearchDoctor";
 import { Link } from "react-router-dom";
+import { docVector } from "../../assets";
 
 const SearchArea = () => {
   const cards = [
-    { name: "Doctors", image: DocVector },
+    { name: "Doctors", image: docVector },
     { name: "Labs", image: labVector },
     { name: "Hospitals", image: HospitalVector },
     { name: "Medical Store", image: CapsuleVector },
