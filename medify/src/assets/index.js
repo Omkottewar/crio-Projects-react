@@ -10,6 +10,7 @@ export { default as discount } from "./discount.png";
 export { default as discount2 } from "./discount2.png";
 export { default as familyImg } from "./familyImg.png";
 export { default as blueTick } from "./blueTick.svg";
+export { default as thumbsUp } from "./thumbsUp.svg";
 export { default as detox } from "./detox.svg";
 export { default as rebecca } from "./rebecca.png";
 export { default as labs } from "./labs.svg";
