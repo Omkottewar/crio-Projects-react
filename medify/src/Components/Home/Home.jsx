@@ -28,8 +28,8 @@ const Home = () => {
   ];
 
   return (
-    <div className="">
-      <div className=" flex flex-col items-center bg-gradient-to-r from-[#E7F0FF] to-[rgba(232,241,255,0.47)]">
+    <div className="home bg-gradient-to-r from-[#E7F0FF] to-[rgba(232,241,255,0.47)]">
+      <div className=" flex flex-col items-center ">
         <Hero />
         <SearchArea />
         <DiscountCarousel />

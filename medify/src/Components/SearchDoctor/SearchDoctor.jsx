@@ -41,7 +41,7 @@ const SearchDoctor = () => {
 
   return (
     <div className="search-doctors">
-      <form onSubmit={handleSubmit} className="flex gap-5">
+      <form onSubmit={handleSubmit} className=" search-doctors-form flex gap-5">
         <select
           name="states"
           id="states"
@@ -71,8 +71,9 @@ const SearchDoctor = () => {
 
         {/* Search button */}
        <button type="submit" className="search-area__button ">
-          <img src={search} alt="Search Icon" />
-          Search
+         <Link to='/finddoctors' className="flex gap-5">
+         <img src={search} alt="Search Icon" />
+         Search</Link>
         </button>
       </form>
 

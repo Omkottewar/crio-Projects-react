@@ -1,6 +1,7 @@
 .patient-caring-wrapper {
-  width: 80%;
+  width: 95%;
   height: 584px;
+  padding: 0px 80px  ;
   display: flex;
   justify-content: space-between;
   position: relative;

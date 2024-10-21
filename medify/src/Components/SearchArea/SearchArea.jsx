@@ -4,11 +4,9 @@ import labVector from "../../assets/labVector.svg";
 import HospitalVector from "../../assets/HospitalVector.svg";
 import CapsuleVector from "../../assets/CapsuleVector.svg";
 import AmbulanceVector from "../../assets/AmbulanceVector.svg";
-import search from "../../assets/search.svg";
+import docVector from "../../assets/docVector.svg"; 
 import Cards from "./Cards";
 import SearchDoctor from "../SearchDoctor/SearchDoctor";
-import { Link } from "react-router-dom";
-import { docVector } from "../../assets";
 
 const SearchArea = () => {
   const cards = [
@@ -20,11 +18,11 @@ const SearchArea = () => {
   ];
 
   return (
-   <div className="search-area">
+    <div className="search-area ">
       <div className="search-area__input">
-       <div className=" relative -bottom-14 left-28">
-       <SearchDoctor/>
-       </div>
+        <div className="search-area__input-wrapper">
+          <SearchDoctor />
+        </div>
       </div>
       <div className="search-area__content">
         <h2 className="search-area__heading">You may be Looking for</h2>

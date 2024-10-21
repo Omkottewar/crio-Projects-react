@@ -34,7 +34,7 @@ const FindDoctorArea = () => {
             );
           })}
         </div>
-    <div className="v">    <img src={commercial}  alt="Commercial" className="" /></div>
+    <div className="commercial">    <img src={commercial}  alt="Commercial" className="" /></div>
       </div>
     </div>
   );

@@ -69,7 +69,7 @@ const DoctorCard = ({ hospitalName, address, type, rating, id }) => {
   
 
   return (
-    <div className="bg-white rounded-2xl p-5">
+    <div className="doctor-container bg-white rounded-2xl p-5">
       <div className="doctor-card">
         <img src={doctorCardImage} className="doctor-card-image" alt="Doctor" />
         <div className="doctor-card-content">
@@ -98,7 +98,7 @@ const DoctorCard = ({ hospitalName, address, type, rating, id }) => {
         </div>
       </div>
       {showSlot && (
-        <div>
+        <div className="tabs-container">
           <div className="flex justify-between">
             {datesArray.current?.map((slot, index) => (
               <button

@@ -1,14 +1,13 @@
 .doctor-card {
   width: 786px;
   height: 269px;
-  top: 774px;
-  left: 135px;
   padding: 0px 0.44px 0.62px 0px;
   gap: 0px;
   border: 0px 0px 1px 0px;
   opacity: 0px;
   display: flex;
   align-items: start;
+
 }
 
 .doctor-card-image {
@@ -20,7 +19,7 @@
 }
 
 .doctor-card-info {
-  width: 339.55px;
+  width: 100;
   height: 220.38px;
   padding: 43px 12.55px 0px 16px;
   gap: 0px;
@@ -96,4 +95,43 @@
 .date-btn {
 width: 110px;
 height: 50px;
+}
+
+
+@media (max-width:860px){
+  .commercial{
+    display: none;
+  }
+  .doctor-container{
+    width: 100%;
+    margin: 0px;
+  }
+  .doctor-card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+.doctor-card-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.doctor-list {
+  /* Styles for the list of doctor cards */
+  width: 70%;
+}
+}
+
+@media (max-width:500px){
+  .doctor-card-availability{
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+  }
+  .tabs-container{
+    margin-top: -30px;
+  }
 }

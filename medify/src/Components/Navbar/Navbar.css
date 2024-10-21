@@ -1,5 +1,7 @@
 .navbar {
-  width: 100%;
+  width: 95%;
+  /* outline: 1px solid red; */
+  margin: 0px  auto;
 }
 .navbar__container {
   height: 96px;

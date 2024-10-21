@@ -1,9 +1,10 @@
 .header-text{
     font-size: 10px;
     padding: 5px 0px 5px 0px;
-    width: 100%;
 }
-
+.home{
+    /* outline: 1px solid black; */
+}
 
 @media (min-Width:740px){
     .header-text{

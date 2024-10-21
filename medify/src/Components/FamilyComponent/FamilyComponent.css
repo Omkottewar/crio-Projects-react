@@ -1,5 +1,6 @@
 .family-component {
-  width: 90%;
+  width: 95%;
+  /* outline: 1px solid black; */
   height: 800px;
   display: flex;
   justify-content: space-between;

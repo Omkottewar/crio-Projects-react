@@ -14,7 +14,7 @@ function App() {
   console.log(bookingList)
   // localStorage.clear()
   return (
-    <div className="w-screen">
+    <div className="">
       <BrowserRouter>
         <HospitalContext.Provider value={{ hospitalList, setHospitalList }}>
           <BookingContext.Provider value={{ bookingList, setBookingList }}>
